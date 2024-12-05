@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  description: string;
+  link?: string;
+  date: string;
+}
+
+const { title, company, description, date } = Astro.props;
+---
+
+<span
+  class="absolute flex items-center justify-center size-6 bg-blue-900 rounded-full -start-3 ring-8 ring-gray-900"
+>
+  <svg
+    class="size-2.5 text-white"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+  >
+    <path
+      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+    ></path>
+  </svg>
+</span>
+
+<div
+  class="relative mx-6 pb-10 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+>
+  <div class="relative pb-12 md:col-span-2">
+    <h3 class="text-lg font-semibold mb-2">{title}</h3>
+    <h4 class="font-semibold text-gray-400">{company}</h4>
+    <time
+      class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+    >
+      {date}
+    </time>
+  </div>
+
+  <div class="relative flex flex-col gap-2 pb-4 text-gray-300 md:col-span-3">
+    {description}
+  </div>
+</div>

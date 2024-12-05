@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import SocialPill from "../components/SocialPills.astro";
+import Email from "../components/Email.astro";
+import Experience from "../components/Experience.astro";
+---
+
+<Layout title="Francisco Victorio Santiago | Programador" description="">
+  <main>
+    <section class="w-full mx-auto lg:w-[740px] py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hola!, soy Frank
+        <a
+          href="https://www.linkedin.com/in/imfrankvs"
+          target="_blank"
+          rel="noopeners"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+
+      <h2 class="text-2xl opacity-70 text-wrap">
+        Estudiante en proceso de titulación, Desarrollador Web. De la Ciudad de
+        México, México ✨. Especializado en crear aplicaciones únicas.
+      </h2>
+
+      <nav class="flex gap-x-6 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/imfrankvs">
+          <LinkedInIcon class="size-6" />
+          LinkedIn
+        </SocialPill>
+
+        <SocialPill href="https://www.github.com/ImFrankVS">
+          <GitHubIcon class="size-6" />
+          GitHub
+        </SocialPill>
+
+		    <Email />
+
+      </nav>
+
+      <Experience />
+
+    </section>
+  </main>
+</Layout>

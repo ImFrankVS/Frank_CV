@@ -1,0 +1,33 @@
+---
+import ExpItem from "./ExpItem.astro"
+
+const EXPERIENCE = [
+  {
+    date: "18 de noviembre 2024",
+    title: "Desarrollador de Software",
+    company: "CINVESTAV",
+    description: 
+      "Desarrollo de una interfaz gráfica para simplificar el uso de funciones avanzadas en Julia para analizar registros electrofisiológicos de alta densidad.",
+    link: "https://github.com/ImFrankVS/eval-Register"
+  },
+
+  {
+    date: "18 de noviembre 2024",
+    title: "Desarrollador de Software",
+    company: "CINVESTAV",
+    description: 
+      "Desarrollo de una interfaz gráfica de usuario con el fin de simplificar el uso de métodos y funciones avanzadas desarrolladas en el lenguaje de programación Julia para el análisis de registros electrofisiológicos de alta densidad.",
+    link: "https://github.com/ImFrankVS/eval-Register"
+  }
+]
+---
+
+<ol class="relative border-s border-gray-600 mt-16 pl-10">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExpItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
