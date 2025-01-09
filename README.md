@@ -3,13 +3,16 @@
 Welcome to my CV repository! This repository contains the code and resources for my updated Curriculum Vitae. It highlights:  
 - 📚 **Academic achievements**  
 - 💼 **Professional experience**  
-- 🚀 **Key projects** in communications and electronics engineering, with a specialization in computing.  
+- 🚀 **Key projects**
 
-## 🌐 View My CV Online  
-You can review my CV in a sleek and responsive web format by clicking the link below:  
-[**View My CV**](https://imfrankvs.github.io/Frank_CV/)  
 
----
+## 🌐 View My CV Online
+You can review my CV online through the following link....
+
+[**View My CV**](https://imfrankvs.github.io/Frank_CV/)
+[🔗 **View My CV**](https://imfrankvs.github.io/Frank_CV/)  
+[![View My CV](https://img.shields.io/badge/View%20My%20CV-Online-blue?style=flat-square&logo=github)](https://imfrankvs.github.io/Frank_CV/)
+
 
 ## 🛠️ Technologies Used  
 This CV was created using:  
